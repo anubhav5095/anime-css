@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+    body {
+  transition: 100ms ease;
+}
+    .goku{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    }
+
+.goku-top {
+    top: 28%;
+    left: 33%;
+    background-color: bisque;
+    width: 25%;
+    height: 35%;
+    border-radius: 60% 0% 80% 80%;
+    border:1px black solid;
+  }
+
+  .neck{
+      top: 50%;
+      left: 38%;
+      background-color:bisque;
+      height: 15%;
+      width: 15%;
+      border-radius: 80% 80% 0% 0%;
+      border: 1px black solid;
+  }
+.goku-bottom {
+    top: 65%;
+    left: 20%;
+    background-color: chocolate;
+    width: 50%;
+    height: 65%;
+    border-radius:50% 50% 120% 120%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+  }
+  .right-hand {
+    top: -45%;
+    left: -25%;
+    background-color:bisque;
+    width: 30%;
+    height: 80%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(145deg);
+    z-index: -1;
+    border: 1px black solid;
+    animation-duration: 2s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+      10% {
+        transform: rotate(160deg);
+      }
+      20% {
+        transform: rotate(160deg);
+      }
+      30% {
+        transform: rotate(160deg);
+      }
+      40% {
+        transform: rotate(160deg);
+      }
+    }
+
+  .left-hand {
+    top: -0%;
+    left: 105%;
+    background-color:bisque;
+    width: 30%;
+    height: 80%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-50deg);
+    z-index: -1;
+    border: 1px black solid;
+    
+  }
+  .vest {
+    left: 17%;
+    top: 0%;
+    
+    border-left: 45px solid transparent;
+	border-right: 55px solid transparent;
+	border-top: 100px solid navy;
+  }
+.belt{
+    left: 16%;
+    top: 90%;
+    background-color: navy;
+    width: 100px;
+    height: 15px;
+    border: 1px white solid;
+    border-radius: 30% 30% 30% 30%;
+}
+.belt-t{
+    left: 76%;
+    top: 99%;
+    background-color: navy;
+    width: 80px;
+    height: 15px;
+    transform: rotate(30deg);
+    border: 1px gray solid;
+    border-radius: 30% 30% 30% 70%;
+   
+}
+.left-leg {
+    top: 85%;
+    left:-3%;
+    background-color: chocolate;
+    width: 45%;
+    height: 120%;
+    border-radius: 60% 0% 80% 20%;
+    transform: rotate(9deg);
+    z-index: -2222;
+  }
+
+  .right-leg {
+    top: 85%;
+    left: 54%;
+    background-color: chocolate;
+    width: 45%;
+    height: 120%;
+    border-radius: 60% 0% 80% 20%;
+    transform: rotate(-15deg);
+    z-index: -2222;
+  }
+  .right-boot {
+    top: 185%;
+    left: 84%;
+    background-color: black;
+    width: 22%;
+    height: 40%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-60deg);
+    z-index: -2222;
+    
+  }
+  .right-boot1 {
+    top: 174%;
+    left: 69%;
+    background-color: black;
+    width: 33%;
+    height: 30%;
+    border-radius: 0% 0% 50% 50%;
+    transform: rotate(-14deg);
+    z-index: -2222;
+    border: 2px gray solid;
+  }
+
+  .left-boot {
+    top: 185%;
+    left: -20%;
+    background-color: black;
+    width: 22%;
+    height: 40%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(70deg);
+    z-index: -2222;
+    
+  }
+  .left-boot1 {
+    top: 173%;
+    left: -15%;
+    background-color: black;
+    width: 33%;
+    height: 30%;
+    border-radius: 0% 0% 50% 50%;
+    transform: rotate(16deg);
+    z-index: -2222;
+    border: 2px gray solid;
+  }
+  
+
+  .left-ear {
+    top: 33%;
+    left: 96%;
+    background-color: bisque;
+    width: 15%;
+    height: 20%;
+    border-radius: 0% 50% 50% 0%;
+    border: 1px black solid;
+  }
+  .right-eye {
+    top: 40%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .left-eye {
+    top: 40%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+  .sparkle {
+    top: 25%;
+    left: 15%;
+    background: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+  }
+  .nose {
+    top: 60%;
+    left: 51%;
+    background: black;
+    width: 3%;
+    height: 10%;
+    
+  }
+  .smile {
+    top: 77%;
+    left: 38%;
+    background: black;
+    width: 26%;
+    height: 2%;
+    
+  }
+  .smile1 {
+    top: 74%;
+    left: 59%;
+    background: black;
+    width: 15%;
+    height: 2%;
+    transform: rotate(-44deg);
+    
+  }
+.goku * {
+    position: absolute;
+  }
+  .audio{
+      top: 210%;
+      left: -5%;
+  }
+</style>
+</head>
+<body>
+    
+    <div class="goku">
+        <div class="goku-bottom">
+            <div class="left-hand"></div>
+            <div class="right-hand"></div>
+            <div class="vest"></div>
+            <div class="belt"></div>
+            <div class="belt-t"></div>
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+            <div class="left-boot1"></div>
+            <div class="left-boot"></div>
+            <div class="right-boot1"></div>
+            <div class="right-boot"></div>
+        </div>
+        <div class="belly"></div>
+        <div class="neck"></div>
+        
+        
+        <div class="goku-top">
+            <div class="left-ear"></div>
+            <div class="left-eye">
+                <div class="sparkle"></div>
+            </div>
+            <div class="right-eye">
+                <div class="sparkle"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="smile"></div>
+            <div class="smile1"></div>
+        </div>
+        <img src="gkh1.png" alt="hair" style="height: 350px;width: 350px;">
+        <div class="audio">
+            <audio
+                controls
+                src="uitheme.mp3">
+                    Your browser does not support the
+                    <code>audio</code>
+            </audio>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script>
+    var body = $('body');
+var colors = [ 'black',  'gray','white','navy'];
+var currentIndex = 0;
+setInterval(function () {
+   body.css({
+     backgroundColor: colors[currentIndex]
+   });
+   if (!colors[currentIndex]) {
+       currentIndex = 0;
+   } else {
+       currentIndex++;
+   }
+}, 100);
+</script>
